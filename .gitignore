@@ -1,0 +1,29 @@
+# Local model weights and upstream checkout
+Qwen3VL/*.safetensors
+Qwen3VL/*.bin
+Qwen3VL/*.pt
+Qwen3VL/*.zip
+Qwen3VL/framework/
+third_party/
+
+# Source images and downloaded datasets
+data/raw/
+data/cache/
+data/annotations/
+data/rsllava/train.json
+data/rsllava/validation.json
+data/rsllava/*.jsonl
+*.parquet
+
+# Training outputs and local evaluation artifacts
+runs/
+wandb/
+.cache/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Local environment and editor files
+.venv/
+.env
+.DS_Store

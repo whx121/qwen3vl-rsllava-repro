@@ -1,0 +1,48 @@
+{
+  "description": "First 100 image records from the image-disjoint held-out validation split; 603 multi-turn questions.",
+  "generation": {
+    "max_new_tokens": 64,
+    "max_pixels": 112896,
+    "sample_seed": 42
+  },
+  "base_model": {
+    "caption": {
+      "count": 117,
+      "exact_match": 0.0,
+      "token_f1": 0.1823405295277718,
+      "rouge_l": 0.13770676160144116
+    },
+    "vqa": {
+      "count": 486,
+      "exact_match": 0.01440329218106996,
+      "token_f1": 0.37053058026216007,
+      "rouge_l": 0.31116112688372877
+    },
+    "overall": {
+      "count": 603,
+      "exact_match": 0.011608623548922056,
+      "token_f1": 0.334016092806234,
+      "rouge_l": 0.27750580227671773
+    }
+  },
+  "rsicd_lora": {
+    "caption": {
+      "count": 117,
+      "exact_match": 0.0,
+      "token_f1": 0.38530266673321734,
+      "rouge_l": 0.3059621963138252
+    },
+    "vqa": {
+      "count": 486,
+      "exact_match": 0.14814814814814814,
+      "token_f1": 0.6653355151348862,
+      "rouge_l": 0.6208476518071151
+    },
+    "overall": {
+      "count": 603,
+      "exact_match": 0.11940298507462686,
+      "token_f1": 0.6110007833554579,
+      "rouge_l": 0.5597504738755813
+    }
+  }
+}

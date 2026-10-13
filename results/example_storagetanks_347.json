@@ -1,0 +1,18 @@
+{
+  "image": "data/raw/RSICD/images/storagetanks_347.jpg",
+  "conversation_id": "storagetanks_347",
+  "question": "What type of buildings are depicted in the image?",
+  "reference": "The image shows numerous factories.",
+  "base_model_prediction": "The image depicts industrial buildings, specifically a facility housing large storage tanks, likely for chemicals, petroleum, or other industrial materials. The buildings include: Storage tank farms dominated by large, white, cylindrical tanks arranged in clusters; support buildings surrounding the tanks, likely for control rooms.",
+  "lora_prediction": "The image shows numerous factories.",
+  "base_model_scores": {
+    "exact_match": 0.0,
+    "token_f1": 0.0784313725490196,
+    "rouge_l": 0.0784313725490196
+  },
+  "lora_scores": {
+    "exact_match": 1.0,
+    "token_f1": 1.0,
+    "rouge_l": 1.0
+  }
+}

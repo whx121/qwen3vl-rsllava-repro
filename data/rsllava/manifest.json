@@ -1,0 +1,36 @@
+{
+  "source": "data/annotations/NWPU-RSICD-UAV-UCM-LR-DOTA-intrcutions.json",
+  "source_split": null,
+  "rows_before_prefix_filter": 39398,
+  "include_prefix": [
+    "RSICD"
+  ],
+  "seed": 42,
+  "validation_ratio": 0.1,
+  "stats": {
+    "input_rows": 8734,
+    "accepted_rows": 8734,
+    "rejected_rows": 0,
+    "unique_images": 8734,
+    "total_turns": 52341,
+    "caption_rows": 8734,
+    "vqa_rows": 0,
+    "multi_turn_rows": 8734,
+    "missing_images": 0,
+    "duplicate_image_rows": 0
+  },
+  "train_rows": 7861,
+  "validation_rows": 873,
+  "train_images": 7861,
+  "validation_images": 873,
+  "split_report": {
+    "train_rows": 7861,
+    "validation_rows": 873,
+    "train_images": 7861,
+    "validation_images": 873,
+    "image_overlap": [],
+    "invalid_rows": [],
+    "valid": true
+  },
+  "rejected_rows": []
+}

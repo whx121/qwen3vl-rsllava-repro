@@ -1,0 +1,9 @@
+{
+  "train_rows": 7861,
+  "validation_rows": 873,
+  "train_images": 7861,
+  "validation_images": 873,
+  "image_overlap": [],
+  "invalid_rows": [],
+  "valid": true
+}

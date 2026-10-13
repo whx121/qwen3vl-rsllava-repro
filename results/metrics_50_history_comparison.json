@@ -1,0 +1,78 @@
+{
+  "experiment": "current_lora_50_image_history_ablation",
+  "model": "/media/amers/SSD_part2/VLM/qwen3vl_rsllava_repro/Qwen3VL",
+  "adapter": "/media/amers/SSD_part2/VLM/qwen3vl_rsllava_repro/runs/qwen3vl4b_rsllava_sft",
+  "data": "data/rsllava/validation.json",
+  "image_records": 50,
+  "turns": 297,
+  "sample_seed": 42,
+  "max_pixels": 112896,
+  "max_new_tokens": 256,
+  "selection_verified_identical": true,
+  "results": {
+    "none": {
+      "output_dir": "runs/qwen3vl4b_rsllava_sft_eval_50_no_history",
+      "caption": {
+        "count": 57,
+        "exact_match": 0.0,
+        "token_f1": 0.3475683392482984,
+        "rouge_l": 0.28261322710311376
+      },
+      "vqa": {
+        "count": 240,
+        "exact_match": 0.008333333333333333,
+        "token_f1": 0.4536591045001296,
+        "rouge_l": 0.4054775278366383
+      },
+      "overall": {
+        "count": 297,
+        "exact_match": 0.006734006734006734,
+        "token_f1": 0.4332982505629095,
+        "rouge_l": 0.38189751052414367
+      }
+    },
+    "oracle": {
+      "output_dir": "runs/qwen3vl4b_rsllava_sft_eval_50_oracle_history",
+      "caption": {
+        "count": 57,
+        "exact_match": 0.03508771929824561,
+        "token_f1": 0.40026302819896914,
+        "rouge_l": 0.331297318263278
+      },
+      "vqa": {
+        "count": 240,
+        "exact_match": 0.12916666666666668,
+        "token_f1": 0.6594436365126662,
+        "rouge_l": 0.6135842930055259
+      },
+      "overall": {
+        "count": 297,
+        "exact_match": 0.1111111111111111,
+        "token_f1": 0.6097019036039769,
+        "rouge_l": 0.5594080049236804
+      }
+    },
+    "delta_oracle_minus_none": {
+      "caption": {
+        "exact_match": 0.03508771929824561,
+        "token_f1": 0.05269468895067075,
+        "rouge_l": 0.04868409116016424
+      },
+      "vqa": {
+        "exact_match": 0.12083333333333333,
+        "token_f1": 0.2057845320125366,
+        "rouge_l": 0.2081067651688876
+      },
+      "overall": {
+        "exact_match": 0.10437710437710437,
+        "token_f1": 0.17640365295076143,
+        "rouge_l": 0.17751049439956634
+      }
+    },
+    "paired_token_f1_turns": {
+      "oracle_better": 229,
+      "none_better": 59,
+      "equal": 9
+    }
+  }
+}
